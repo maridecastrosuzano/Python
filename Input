@@ -1,0 +1,20 @@
+# las entradas de datos siempre vienen como strings
+nombre = input("Introduce tu nombre: ")
+edad = input("Introduce tu edad: ")
+print("Tu nombre es: " +nombre +" y tu edad es: " +edad)
+
+
+# las entradas de datos con números: hay que convertirlos con la funcion int o float dependiendo del caso
+edad = int(input("Cual es tu edad?: "))
+if edad >= 18:
+    print("Puedes votar")
+else:
+    print("Aún no puedes votar")
+
+
+# entrada de datos con operadores
+numero = int(input("Agrega un número y te diré si es par o impar: \n\r"))
+if numero % 2 == 0:
+    print(f"El número {numero} es par")
+else:
+    print(f"El número {numero} es impar")
