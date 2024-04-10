@@ -1,15 +1,33 @@
 # Definición de variables
-# definir multiples variables en una sola línea
-nombre_completo, edad, estado_civil = "Maritza De Castro", 37, "Soltera"
+libro_favorito = "El plan de tu alma"
+print(libro_favorito)
 
+
+# definir múltiples variables en una sola línea
+nombre_completo, edad, estado_civil = "Maritza De Castro", 37, "Soltera"
 print(nombre_completo, edad, estado_civil)
 print(nombre_completo)
 print(edad)
 print(estado_civil)
 
-# definir unico valor para diferentes variables
+
+# definir único valor para diferentes variables
 apellido_1 = apellido_2 = apellido_3 = "De Castro"
 print(apellido_1)
 print(apellido_2)
 print(apellido_3)
 print(apellido_1, apellido_2, apellido_3)
+
+
+# Tipo de variables
+nombre = "Giacomo" # cadena o string
+edad = 39 # entero o int
+peso = 70.3 # flotante o float
+soltero = True # boleano o boolean
+
+
+# Función type: nos dice el tipo de datos
+print(type(nombre))
+print(type(edad))
+print(type(peso))
+print(type(soltero))
