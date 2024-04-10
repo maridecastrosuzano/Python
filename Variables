@@ -1,0 +1,15 @@
+# Definición de variables
+# definir multiples variables en una sola línea
+nombre_completo, edad, estado_civil = "Maritza De Castro", 37, "Soltera"
+
+print(nombre_completo, edad, estado_civil)
+print(nombre_completo)
+print(edad)
+print(estado_civil)
+
+# definir unico valor para diferentes variables
+apellido_1 = apellido_2 = apellido_3 = "De Castro"
+print(apellido_1)
+print(apellido_2)
+print(apellido_3)
+print(apellido_1, apellido_2, apellido_3)
