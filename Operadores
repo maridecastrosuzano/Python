@@ -1,0 +1,89 @@
+# Operadores de asignación
+"""
+= asignacion
++= sumar y asignar
+-= restar y asignar
+*= multiplicar y asignar
+/= dividir y asignar
+**= elevar y asignar
+"""
+
+# suma
+numero_1 = 10
+numero_1 += 5
+print(numero_1)
+
+# resta
+numero_1 = 10
+numero_1 -= 5
+print(numero_1)
+
+# multiplicar
+numero_1 = 10
+numero_1 *= 5
+print(numero_1)
+
+# dividir
+numero_1 = 10
+numero_1 /= 5
+print(numero_1)
+
+# elevar
+numero_1 = 2
+numero_1 **= 2
+print(numero_1)
+
+# otro ejemplo
+numero_1 = 10
+numero_2 = 5
+numero_1 += numero_2
+print(numero_1)
+
+# Operadores de comparación
+"""
+== igualdad , con este operador podemos comparar cadenas con numero
+> mayor
+>= mayor o igual 
+< menor
+< menor o igual
+!= distinto, con este operador podemos comparar cadenas con numero
+
+"""
+
+# ejm 1 operadores de comparación
+print(3==3)
+
+# ejm 2 operadores de comparación
+expresion = "Carlos" == "carlos"
+print(expresion)
+
+# ejm 3 operadores de comparación
+expresion = "Carlos" == 5
+print(expresion)
+
+# ejm 4 operadores de comparación
+expresion = "Carlos" != "carlos"
+print(expresion)
+
+# Operadores lógicos
+"""
+and
+or
+not
+"""
+
+# operador and
+resultado = 7>3 and 5>1 and 10>9 
+print(resultado)
+
+# operador or
+resultado = 1>3 or 5>10 or 10==9 
+print(resultado)
+
+# operador not (negación)
+resultado = not 1>3 # 1 no es mayor que 3 pero al anteponer el not el resultado de la corrida sera True
+print(resultado)
+
+# operador and / or
+resultado = 1>3 and 5>10 or 7>2 # en los operadores lógicos se pueden usar diferente operadores en una misma expresion
+print(resultado)
