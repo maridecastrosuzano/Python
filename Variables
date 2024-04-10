@@ -31,3 +31,20 @@ print(type(nombre))
 print(type(edad))
 print(type(peso))
 print(type(soltero))
+
+
+# Concatenacion de variables
+nombre = "Maritza "
+apellido = "De Castro"
+print(nombre + apellido) # solo podemos concatenar cadenas, no es posible cadena+entero
+
+# otro forma de concatenar
+nombre = "Giacomo "
+apellido = "Colombo"
+nombre_completo = nombre+apellido
+print(nombre_completo)
+
+# otro ejemplo de concatenación
+nombre = "Ana"
+nombre_completo = nombre+"Gonzalez"
+print("El nombre es: " +nombre_completo)
