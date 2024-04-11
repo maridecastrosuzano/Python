@@ -1,0 +1,78 @@
+# Condicional if
+edad = input("Introduce tu edad: \n\r")
+
+try:
+    edad = int(edad)
+except:
+    print("Debes introducir una edad válida")
+    exit()
+
+if edad >=18:
+    print("Eres mayor de edad")
+
+
+# Condicional if, else
+cantidad = input("Indica la cantidad de llantas a comprar: ")
+
+try:
+    cantidad = int(cantidad)
+except:
+    print("Debe introducir una cantidad válida")
+    exit()
+
+if cantidad < 5:
+    total = cantidad * 800
+else:
+    total = cantidad * 700
+
+print(f"El monto total a pagar es: ${total}")
+
+
+# Condicional if, elif, else
+dia = input("Introduce un número entre el 1 al 7: ")
+try:
+    dia = int(dia)
+except:
+    print("Introduce un número válido")
+    exit()
+
+if dia == 1:
+    print("Lunes")
+elif dia ==2:
+    print("Martes")
+elif dia ==3:
+    print("Miercoles")
+elif dia ==4:
+    print("Jueves")
+elif dia ==5:
+    print("Viernes")
+elif dia ==6:
+    print("Sábado")
+elif dia ==7:
+    print("Domingo")
+else:
+    print("Introduce una opción válida entre el 1 al 7")
+
+
+# Condicional anidada
+genero = input("Genero: Indique M para masculino y F para femenino: ")
+
+edad = input("Introduzca su edad: ")
+try:
+    edad=int(edad)
+except:
+    print("Por favor indique una edad válida")
+    exit()
+
+if genero=="M":
+    if edad>=60:
+        print("Puede jubilarse")
+    else:
+        print("Aún no tiene edad para jubilarse")
+elif genero=="F":
+    if edad>54:
+        print("Puede jubilarse")
+    else:
+        print("Aún no puede jubilarse")
+else:
+    print("Indique una opción de género válida")
