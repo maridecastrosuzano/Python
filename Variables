@@ -25,7 +25,6 @@ edad = 39 # entero o int
 peso = 70.3 # flotante o float
 soltero = True # boleano o boolean
 
-
 # Función type: nos dice el tipo de datos
 print(type(nombre))
 print(type(edad))
@@ -48,3 +47,38 @@ print(nombre_completo)
 nombre = "Ana"
 nombre_completo = nombre+"Gonzalez"
 print("El nombre es: " +nombre_completo)
+
+
+# convertir variables
+
+# convertir número entero y flotante a cadena
+numero_entero = 7
+numero_flotante = 10.5
+print("El numero entero es: " +str(numero_entero))
+print("El numero flotante es: " +str(numero_flotante))
+
+# otra forma de convertir número a cadena
+numero_entero = 7
+numero_entero = str(numero_entero) # reescribimos el valor de la variable
+print("El numero entero es: " +numero_entero)
+
+# otra forma de convertir número a cadena, usando f-string
+numero_entero = 10
+print(f"El numero entero es: {numero_entero}")
+
+# convertir a mayúscula
+nombre = "Maritza"
+print(nombre.upper())
+
+# convertir a minuscula
+apellido = "Suzano"
+print(apellido.lower())
+
+# otra forma de convetir a minúscula
+apellido = "DE Castro"
+apellido = apellido.lower()
+print(apellido)
+
+#swapcase, lo que está en mayúscula pasa a minúscula y lo que está en minúscula pasa a mayúscula
+nombre_apellido = "maritza DE CASTRO"
+print(nombre_apellido.swapcase())
