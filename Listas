@@ -1,0 +1,74 @@
+# Crear una lista vacia
+lista_1=[]
+
+"""
+cada elemento de la lista tiene un índice, que comienza desde el 0 cuando empezamos de izquierda a derecha
+al contar de derecha a izquierda, el índice comienza en -1
+"""
+frutas=["Fresa","Naranja","Mango","Pera"]  
+print(frutas)
+print(frutas[0])
+print(frutas[-2])
+print(frutas[0:3]) #podemos imprimir un intervalo
+print(frutas[:2])
+print(frutas[1:])
+
+
+# una lista puede ser de enteros, flotantes, boleanos, cadena, incluso una lista dentro de la lista
+frutas=["Fresa","Naranja","Mango","Pera", 9, [2,4,6]]
+print(frutas[5][0]) #aqui estamos pidiendo el índice 5 y el índice 0 de esa lista interna
+
+
+# ordenar los elementos en una lista
+lenguajes = ["Python", "Kotlin", "Java", "JavaScript"] 
+lenguajes.sort()
+print(lenguajes)
+
+
+# intercambiar el orden de los elementos de la lista
+lenguajes[0], lenguajes[3] = lenguajes[3], lenguajes[0]
+print("Nuevo orden de la lista:", lenguajes)
+
+
+# acceder a un elemento dentro de un texto
+aprendiendo = f"Estoy aprendiendo {lenguajes[3]}"
+print(aprendiendo)
+
+
+# modificar valores de una lista
+lenguajes[2] = "PHP"
+print(lenguajes)
+
+
+#agregar elementos a una lista, usando append el elemento se agrega al final de la lista
+lenguajes.append("Ruby")
+print (lenguajes)
+
+
+#agregar elementos a una lista, usando insert el elemento se agrega en la posición que le indicamos desplazando a la derecha los otros elementos
+lenguajes.insert(0,"C++")
+print (lenguajes)
+
+
+# eliminar elemento en una lista
+del lenguajes[1]
+print (lenguajes)
+
+
+# eliminar el último elemento en una lista
+lenguajes.pop()
+print(lenguajes)
+
+
+# eliminar con pop un elemento especifico en la lista
+lenguajes.pop(0)
+print(lenguajes)
+
+
+# eliminar por nombre
+lenguajes.remove("PHP")
+print(lenguajes)
+
+
+# imprimir la longitud de la lista
+print("Longitud de la lista:", len(lenguajes))
