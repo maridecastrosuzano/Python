@@ -1,0 +1,36 @@
+"""
+los diccionarios se definen con llaves {}
+los diccionarios no tienen índices, se llaman llave-valor y la llave va entre comillas siempre
+los diccionarios pueden tener tuplas, listas y otros diccionarios 
+"""
+tutor_1= {
+    "nombre":"Maritza", 
+    "edad":27, 
+    "cursos":["Python","PHP","JavaScript"]
+}
+print(tutor_1["nombre"])
+print(tutor_1["cursos"] [1]) #aqui accedemos a la llave cursos, el índice 1 porque es una lista
+
+
+#modificando el valor de una llave
+tutor_1["edad"]=35
+print(tutor_1)
+
+
+# agregar nuevos elementos
+tutor_1["instituto"] = "Eade"
+print(tutor_1)
+
+
+# eliminar un valor
+del tutor_1["edad"]
+print(tutor_1)
+
+
+# otra forma de diccionario, usando funcion dict
+"""
+las llaves no van entre comillas y usamos = en vez de :
+para modificar un valor se hace igual al ejemplo anterior
+"""
+tutor_2=dict(nombre="Ana",edad=25,apellido="Gonzalez")
+print(tutor_2)
