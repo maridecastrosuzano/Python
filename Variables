@@ -25,6 +25,7 @@ edad = 39 # entero o int
 peso = 70.3 # flotante o float
 soltero = True # boleano o boolean
 
+
 # Función type: nos dice el tipo de datos
 print(type(nombre))
 print(type(edad))
