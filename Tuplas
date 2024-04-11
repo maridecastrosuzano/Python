@@ -1,0 +1,63 @@
+# Crear una tupla vacia
+tupla_1 = () 
+print(tupla_1)
+
+
+# Crear una tupla con un sólo elemento
+tupla_1 = (2,) # debo colocar una coma, de lo contrario el sistema entederá que es una variable y no una tupla
+
+
+# Crear una tupla con varios elementos
+tupla_1 = (2,4,5,10)
+print(type(tupla_1))
+print(tupla_1)
+print(tupla_1[0]) # imprimir un elemento especifico
+
+
+"""
+la función len() acepta tuplas, y regresa el número de elementos contenidos dentro;
+el operador + puede unir tuplas
+el operador * puede multiplicar las tuplas, así como las listas;
+los operadores in y not in funcionan de la misma manera que en las listas.
+"""
+
+my_tuple = (1, 10, 100)
+
+t1 = my_tuple + (1000, 10000)
+t2 = my_tuple * 3
+
+print(len(t2))
+print(t1)
+print(t2)
+print(10 in my_tuple)
+print(-10 not in my_tuple)
+
+
+# intercambiar tuplas
+var = 123
+ 
+t1 = (1, )
+t2 = (2, )
+t3 = (3, var)
+t1, t2, t3 = t2, t3, t1
+print(t1, t2, t3)
+
+
+"""
+las tuplas se definen con paréntesis
+dentro de una tupla puede haber enteros, cadenas, flotantes, boleanos, una lista, una tupla.
+"""
+frutas=("Fresa","Naranja","Mango","Pera")
+print(frutas)
+print(frutas[0])
+print(frutas[-2])
+print(frutas[0:3]) #podemos imprimir un intervalo
+print(frutas[:2])
+print(frutas[1:])
+
+
+# Listas Vs Tuplas
+# las lista son mutables (pueden cambiar los valores, eliminar y agregar) y las tuplas no son mutables
+frutas=["Fresa","Naranja","Mango","Pera"] 
+frutas[3]="Durazno" # cambiamos el valor del indice 3, Pera por Durazno
+print(frutas)
