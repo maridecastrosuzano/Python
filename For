@@ -1,0 +1,78 @@
+# for, permite recorrer cada uno de los valores de una lista, tupla, cadena o diccionario
+lista_frutas=["Fresa","Naranja","Mango","Pera"]  
+tupla_frutas=("Sandia","Melocotón","Uva","Manzana")
+texto="Hola mundo"
+
+for fruta in lista_frutas:
+    print(fruta)
+
+for fruta in tupla_frutas:
+    print(fruta)
+
+for letra in texto:
+    print(letra)
+
+
+# otro ejemplo
+lenguajes = ["Python", "Kotlin", "Java", "JavaScript", "PHP", "Ruby", "GO"] 
+
+# crear un iterador
+for lenguaje in lenguajes:
+    print(lenguaje)
+
+# crear un iterador combinando con strings 
+for lenguaje in lenguajes:
+    print(f"Estoy aprendiendo {lenguaje}")
+
+# for que escriba numeros
+for numero in range(0,10): # el 10 nos dice cuantos numero queremos que arroje, si son 10 va a arrojar hasta el numero 9
+    print(numero)
+
+# for que escriba numeros
+for numero in range(0,10,3): # el número 3 nos dice de cuanto en cuanto queremos los números
+    print(numero)
+
+
+# for / diccionario
+frutas={
+   "Fresa":"roja",
+   "Pera": "verde",
+   "Papaya": "naranja",
+   "Uva": "morada",
+   "Guayaba": "rosa" 
+}
+
+for fruta in frutas: #aqui recorre lo que está en la llave
+    print(fruta)
+
+for frutitas in frutas.values(): #aqui recorre lo que está en los valores
+    print(frutitas)
+
+for frutas_todas in frutas: #aqui recorre todo lo que está en el diccionario, las llaves y valores
+    print(f"{frutas_todas} es de color {frutas[frutas_todas]}")
+
+# otra forma
+for llave,valor in frutas.items():
+    print(f"{llave} es de color {valor}")
+
+
+# break en for
+lista_frutas=["Fresa","Naranja","Mango","Pera"]  
+tupla_frutas=("Sandia","Melocotón","Uva","Manzana")
+texto="Hola mundo"
+
+for fruta in lista_frutas:
+     if fruta == "Mango":
+          break
+     print(fruta)
+
+
+# continue en for
+lista_frutas=["Fresa","Naranja","Mango","Pera"]  
+tupla_frutas=("Sandia","Melocotón","Uva","Manzana")
+texto="Hola mundo"
+
+for fruta in lista_frutas:
+     if fruta == "Fresa":
+          continue
+     print(fruta)
