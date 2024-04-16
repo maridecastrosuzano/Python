@@ -1,0 +1,80 @@
+def message(): #definición de la función sin parametros
+    print("Ingresar valor: ")
+ 
+message() # invocación de la función
+a = int(input())
+
+
+# definir una función con un parameto
+def message(number):
+    print("Ingresa un número:", number)
+ 
+message(1)
+ 
+
+# definir una función con dos parametos
+
+def message(what, number):
+    print("Ingresa", what, "número", number)
+ 
+message("teléfono", 11)
+message("precio", 5)
+message("número", "number")
+
+
+# otro ejemplo
+def introduction(first_name, last_name):
+    print("Hola, mi nombre es", first_name, last_name)
+ 
+introduction("Luke", "Skywalker")
+introduction("Jesse", "Quick")
+introduction("Clark", "Kent")
+
+
+# definicion de una función, paso de argumentos de palabra clave
+def introduction(first_name, last_name):
+    print("Hola, mi nombre es", first_name, last_name)
+ 
+introduction(first_name = "James", last_name = "Bond")
+introduction(last_name = "Skywalker", first_name = "Luke")
+
+
+# defincion de una función con tres parametros
+def address(street, city, postal_code):
+    print("Tu dirección es:", street,"St.,", city, postal_code)
+ 
+s = input("Calle: ")
+p_c = input("Código Postal: ")
+c = input("Ciudad: ")
+address(s, c, p_c)
+
+
+# definicion de funcion, argumentos posicionales
+def adding (a,b,c):
+    print(a, "+", b,"+", c, "=", a+b+c)
+ 
+adding(1,2,3)
+
+
+ # definicion de funcion, palabras clave
+def adding (a,b,c):
+    print(a, "+", b,"+", c, "=", a+b+c)
+ 
+adding(c=1,a=2,b=3)
+
+
+ # definicion de funcion, mezclando argumentos posicionales y palabras clave
+def adding (a,b,c):
+    print(a, "+", b,"+", c, "=", a+b+c)
+ 
+adding(3,c=1,b=2)
+
+
+#otro ejemplo
+def introduction(first_name="Maria", last_name="Smith"):
+     print("Hola, mi nombre es", first_name, last_name)
+
+introduction("Jorge", "Pérez")
+introduction("Maritza")
+introduction()
+introduction(last_name="Ruiz")
