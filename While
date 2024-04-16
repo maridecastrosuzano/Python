@@ -30,3 +30,22 @@ while numero <=10:
     else:
         print(numero)
     numero += 1 # incremento para evitar un loop infinito
+
+
+# break en while
+numero=1
+while numero<=10:
+    print(numero)
+    if numero==7:
+        break
+    numero+=1
+
+
+# continue en while
+numero=1
+while numero<=10:
+        if numero==5:
+            numero+=1
+            continue
+        print(numero)
+        numero+=1
