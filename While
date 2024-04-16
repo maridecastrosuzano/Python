@@ -1,0 +1,32 @@
+# con un ciclo podemos repetir un codigo la cantidad de veces que queramos
+contador = 1
+while contador <=10:
+    print(contador)
+    contador+=1
+
+print("Fin del ciclo")
+
+
+# ejemplo
+numero = input("Introduce un número: ")
+try:
+    numero=int(numero)
+except:
+    print("Introduce un número válido")
+    exit()
+
+contador=1
+
+while contador <=12:
+    print(f"{numero} x {contador} = {numero*contador}")
+    contador+=1
+print(f"La tabla del {numero} ha sido construida correctamente")
+
+
+# condicional if dentro de while
+while numero <=10: 
+    if numero == 5:
+        print("Cinco")
+    else:
+        print(numero)
+    numero += 1 # incremento para evitar un loop infinito
